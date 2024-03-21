@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pilot Name Generator</title>
+  <style>
+    @font-face {
+      font-family: 'Geom Graphic';
+      src: url('fonts/geom-graphic.otf') format('opentype');
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      width: 300px;
+      margin-bottom: 20px;
+    }
+
+    .preview-area {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pilot Name Generator</h1>
+  <div class="container">
+    <input type="text" id="userInput" placeholder="Enter your pilot name">
+    <div class="preview-area" id="previewArea"></div>
+    <div class="button-group">
+      <button id="generateButton">Generate Name Tape</button>
+      <button id="saveButton">Save</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
